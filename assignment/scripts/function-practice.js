@@ -56,14 +56,29 @@ console.log('isPositive - should say false', isPositive(-31));
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
-function getLast(array) {
 
+function getLast(array) {
+  if (array.length > 0) {
+    return array[array.length - 1];
+    console.log('the last item in the array is:', getLast());
+  }
+  else if (!array.length) {
+    return undefined;
+    console.log('The array is empty:', getLast());
+
+  }
 }
+
+let soda = ['coke', 'pepsi', 'dr pepper', 'sprite'];
+let smoothieFlavors = [];
+console.log('The last soda flavor is:', getLast(soda));
+console.log('The last smoothie flavor is:', getLast(smoothieFlavors));
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find(value, array) {
+
 
 }
 

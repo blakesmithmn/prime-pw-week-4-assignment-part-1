@@ -78,7 +78,14 @@ console.log('The last smoothie flavor is:', getLast(smoothieFlavors));
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find(value, array) {
-
+  for (i of array) {
+    if (i === array[i]) {
+      return true;
+    } // end check if the value exists
+    else {
+      return false;
+    }
+  } // end find value
 
 }
 

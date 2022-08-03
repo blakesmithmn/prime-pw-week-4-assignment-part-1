@@ -82,13 +82,12 @@ console.log('The last smoothie flavor is:', getLast(smoothieFlavors));
 function find(value, array) {
   for (let i = 0; i < array.length; i++) {
     if (value === array[i]) {
-      return true;
-    } // end check if the value exists
-    else {
-      return false;
     }
+    // end check if the value exists
+    // else {
+    // } return false;
   } // end find value
-
+  return value;
 }
 
 let numberArray = [1, 2, 3, 4, 5, 6, 7, 13];
@@ -108,15 +107,15 @@ console.log('isFirstLetter - should say true', isFirstLetter('a', 'apple'));
 console.log('isFirstLetter - should say false', isFirstLetter('z', 'apple'));
 
 // 9. Function to return the sum of all numbers in an array
-function sumAll(value, array) {
-  let sum = 0;
-  for (let i = 0; i < array.length; i++) {
-    sum += array[i];
-  }
-  return sum;
-}
+// function sumAll(value, array) {
+//   let sum = 0;
+//   for (let i = 0; i < array.length; i++) {
+//     sum += array[i];
+//   }
+//   return sum;
+// }
 
-console.log(sumAll([1, 2, 3, 4, 5]));
+// console.log(sumAll([1, 2, 3, 4, 5]));
 
 // i feel like i'm close but something just isn't working :/
 

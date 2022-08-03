@@ -18,7 +18,8 @@ function helloName(name) {
   return name;
 }
 // Remember to call the function to test
-console.log('Hello,', helloName('Blake'));
+let name = 'Blake';
+console.log('Hello,', helloName(name));
 
 // 3. Function to add two numbers together & return the result
 function addNumbers(firstNumber, secondNumber) {
@@ -68,6 +69,7 @@ function getLast(array) {
 
   }
 }
+//testing our work
 
 let soda = ['coke', 'pepsi', 'dr pepper', 'sprite'];
 let smoothieFlavors = [];
@@ -78,8 +80,8 @@ console.log('The last smoothie flavor is:', getLast(smoothieFlavors));
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find(value, array) {
-  for (i of array) {
-    if (i === array[i]) {
+  for (let i = 0; i < array.length; i++) {
+    if (value === array[i]) {
       return true;
     } // end check if the value exists
     else {
@@ -88,6 +90,11 @@ function find(value, array) {
   } // end find value
 
 }
+
+let numberArray = [1, 2, 3, 4, 5, 6, 7, 13];
+let secretNumber = 13;
+
+console.log('The value 13 exists in our array:', find(secretNumber, numberArray));
 
 // ----------------------
 // Stretch Goals
@@ -101,17 +108,27 @@ console.log('isFirstLetter - should say true', isFirstLetter('a', 'apple'));
 console.log('isFirstLetter - should say false', isFirstLetter('z', 'apple'));
 
 // 9. Function to return the sum of all numbers in an array
-function sumAll() {
-  let sum = 0
-  // TODO: loop to add items
+function sumAll(value, array) {
+  let sum = 0;
+  for (let i = 0; i < array.length; i++) {
+    sum += array[i];
+  }
   return sum;
 }
+
+console.log(sumAll([1, 2, 3, 4, 5]));
+
+// i feel like i'm close but something just isn't working :/
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
-
-
+let numbers = [-1, 3, 5, -17, 92];
+function positive([]) {
+  if (array[i] > 0) {
+    return;
+  }
+}
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 

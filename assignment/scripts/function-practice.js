@@ -82,18 +82,19 @@ console.log('The last smoothie flavor is:', getLast(smoothieFlavors));
 function find(value, array) {
   for (let i = 0; i < array.length; i++) {
     if (value === array[i]) {
+      return true;
     }
     // end check if the value exists
-    // else {
-    // } return false;
+    else {
+    } return false;
   } // end find value
-  return value;
+
 }
 
 let numberArray = [1, 2, 3, 4, 5, 6, 7, 13];
 let secretNumber = 13;
 
-console.log('The value 13 exists in our array:', find(secretNumber, numberArray));
+console.log('The value 13 exists in our array:', find(13, numberArray));
 
 // ----------------------
 // Stretch Goals

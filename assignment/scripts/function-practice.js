@@ -84,18 +84,17 @@ function find(value, array) {
     if (value === array[i]) {
       return true;
     }
-    // end check if the value exists
-    else {
-    } return false;
-  } // end find value
+    //i don't really get why this exists out of the function?
+  } return false;
+} // end find value
 
-}
+
 
 let numberArray = [1, 2, 3, 4, 5, 6, 7, 13];
-let secretNumber = 13;
 
 console.log('The value 13 exists in our array:', find(13, numberArray));
-
+console.log('The value -124 exists in our array:', find(-124, numberArray));
+console.log('The value 2 exists in our array:', find(2, numberArray));
 // ----------------------
 // Stretch Goals
 // ----------------------
